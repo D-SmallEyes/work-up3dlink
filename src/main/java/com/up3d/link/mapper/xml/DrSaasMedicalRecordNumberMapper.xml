@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.up3d.link.mapper.DrSaasMedicalRecordNumberMapper">
+    <resultMap id="BaseResultMap" type="com.up3d.link.pojo.entity.DrSaasMedicalRecordNumber">
+         <id column="id" jdbcType="BIGINT" property="id"/>
+         <result column="company_id" jdbcType="BIGINT" property="companyId"/>
+         <result column="type" jdbcType="INTEGER" property="type"/>
+         <result column="prefix" jdbcType="VARCHAR" property="prefix"/>
+         <result column="year" jdbcType="VARCHAR" property="year"/>
+         <result column="month" jdbcType="VARCHAR" property="month"/>
+         <result column="day" jdbcType="VARCHAR" property="day"/>
+         <result column="serial_number" jdbcType="VARCHAR" property="serialNumber"/>
+         <result column="next" jdbcType="INTEGER" property="next"/>
+         <result column="medical_record_number" jdbcType="VARCHAR" property="medicalRecordNumber"/>
+         <result column="is_sys" jdbcType="BIT" property="isSys"/>
+         <result column="gmt_create" jdbcType="INTEGER" property="gmtCreate"/>
+    </resultMap>
+
+    <sql id="baseColumn">
+    id ,company_id ,type ,prefix ,year ,month ,day ,serial_number ,next ,medical_record_number ,is_sys ,gmt_create </sql>
+
+
+</mapper>

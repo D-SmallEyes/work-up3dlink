@@ -1,0 +1,24 @@
+server:
+  port: 1100
+spring:
+  application:
+    name: service-demo
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3300/test?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  mvc:
+    view:
+      prefix: /pages/
+      suffix: .
+  elasticsearch:
+    rest:
+      password: Up3dPlat
+      uris: http://192.168.1.64:9200
+      username: elastic
+mybatis-plus:
+  mapper-locations: classpath:mapper/*Mapper.xml #配置文件位置映射
+  configuration:
+    map-underscore-to-camel-case: true #驼峰映射
+
